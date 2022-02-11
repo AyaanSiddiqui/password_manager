@@ -3,7 +3,7 @@ import pyperclip
 
 def inserting():
     try:
-        mydb=mysql.connector.connect(host="localhost", user="root", password="ILOVEcoding", database="userandpass") #Establishing connection
+        mydb=mysql.connector.connect(host="localhost", user="enter_your_user", password="enter_your_sql_pass", database="database_name") #Establishing connection
         cursor = mydb.cursor(buffered=True) #Initialising pointer to enter commands
         user = input("Please provide username: ")
         passwd = input("Please provide respective passwd: ")
