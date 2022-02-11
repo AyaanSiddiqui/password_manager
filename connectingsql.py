@@ -1,4 +1,5 @@
 import mysql.connector
+import pyperclip
 
 def inserting():
     try:
@@ -40,14 +41,17 @@ def displaying():
         app_name=input()
         cursor.execute("SELECT password from pass WHERE site_or_app='"+app_name+"' or site_or_app='"+app_name+"'")
         reading_result = cursor.fetchall()
-        print("\nYour result hash is:\n")
+        print("-"*40)
+        print("Your result hash is copied to clipboard")
+        print("-"*40)
         for i in reading_result:
             tuple_pointer = i
-            print(tuple_pointer[0])
+            pyperclip.copy(tuple_pointer[0])
+
     except Exception as e:
         print("\nPlease provide correct name.\n",e)
         
-# displaying()
+displaying()
 
 def displaying_websites():
     try:
