@@ -43,7 +43,7 @@ def displaying():
         reading_result = cursor.fetchall()
         print("-"*40)
         print("Your result hash is copied to clipboard")
-        print("-"*40)
+        print("-"*40 + "\n")
         for i in reading_result:
             tuple_pointer = i
             pyperclip.copy(tuple_pointer[0])
