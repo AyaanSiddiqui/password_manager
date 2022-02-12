@@ -35,7 +35,7 @@ def inserting():
 
 def displaying():
     try:
-        mydb=mysql.connector.connect(host="localhost", user="root", password="ILOVEcoding", database="userandpass") #Establishing connection
+        mydb=mysql.connector.connect(host="localhost", user="enter_your_user", password="enter_your_sql_pass", database="database_name") #Establishing connection
         cursor = mydb.cursor(buffered=True) #Initialising pointer to enter commands
         print("\nPlease provide name of app or site or username to find password:")
         app_name=input()
@@ -55,7 +55,7 @@ def displaying():
 
 def displaying_websites():
     try:
-        mydb=mysql.connector.connect(host="localhost", user="root", password="ILOVEcoding", database="userandpass") #Establishing connection
+        mydb=mysql.connector.connect(host="localhost", user="enter_your_user", password="enter_your_sql_pass", database="database_name") #Establishing connection
         cursor = mydb.cursor(buffered=True) #Initialising pointer to enter commands
         cursor.execute("SELECT site_or_app from pass")
         sites_list=cursor.fetchall()
@@ -69,7 +69,7 @@ def displaying_websites():
 
 def create_table():
     try:
-        mydb=mysql.connector.connect(host="localhost", user="root", password="ILOVEcoding", database="userandpass") #Establishing connection
+        mydb=mysql.connector.connect(host="localhost", user="enter_your_user", password="enter_your_sql_pass", database="database_name") #Establishing connection
         cursor = mydb.cursor(buffered=True) #Initialising pointer to enter commands
         cursor.execute("CREATE TABLE  pass (id int NOT NULL AUTO_INCREMENT,username VARCHAR(100),password VARCHAR(40),site_or_app VARCHAR(100),PRIMARY KEY (id))")
         print("\nTable successfully created\n")
