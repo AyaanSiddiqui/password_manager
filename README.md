@@ -25,7 +25,7 @@ Download ZIP from code
 
 To execute this project run
 
-1. Change `(host="localhost", user="enter_your_user", password="enter_your_sql_pass", database="database_name")` and enter your SQL credentials from every function
+1. Change `(host="localhost", user="enter_your_user", password="enter_your_sql_pass", database="database_name")` from every function and enter your SQL credentials
 2. Open any terminal in same folder:
 ```bash
   pip install -r requirements.txt
