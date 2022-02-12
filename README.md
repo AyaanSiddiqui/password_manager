@@ -25,12 +25,14 @@ To execute this project run
 Open any terminal in same folder:
 ```bash
   pip install -r requirements.txt
-
-  python -u menu.py
-  OR
-  py -u menu.py
-
 ```
+```bash
+ python -u menu.py
+```
+OR
+```bash
+  py -u menu.py
+ ```
 ![Screenshot 2022-02-12 094447](https://user-images.githubusercontent.com/82319696/153696149-1a683cf9-ba12-4f40-af05-d7a8261f0ed5.png)
 
 
