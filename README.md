@@ -20,6 +20,7 @@ Download ZIP from code
 ## Prerequsites
 - Python 3
 - MySQL
+- Hashcat
 
 ## Execute
 
