@@ -14,7 +14,7 @@ def menu():
 
 choice=menu()
 
-while choice!="Q":
+while choice!="Q" or choice!="q":
     if choice=="1":
         inserting()
     if choice=="2":
