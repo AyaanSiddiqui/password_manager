@@ -61,7 +61,8 @@ def displaying_websites():
         sites_list=cursor.fetchall()
 
         for result in sites_list:
-            print(result)
+            pointer = result
+            print(pointer[0])
     except Exception as e:
         print(e)
 
